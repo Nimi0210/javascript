@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Event Handler</title>
+        	<script type="text/javascript">
+                function my()
+                {
+                    var name=document.getElementById('user').value;
+                    document.getElementById("demo").innerHTML = "Hello "+name;
+                }   
+                function displayDate() {
+                    document.getElementById("demo1").innerHTML=new Date();
+                }
+                function happy(){
+                    document.getElementById('img1').src="smile.jpg";
+                }
+                function sad(){
+                    document.getElementById('img1').src="sad.jpg";
+                }
+            </script>
+            <style>
+                fieldset { align-self: center;
+                width: 50%;
+                height: 60%;
+                margin: auto;
+                 }
+                
+                h1 {
+                    text-align: center;
+                    color: rgb(16, 20, 240);
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    white-space: pre-line;
+                    text-shadow: 2cm;
+                }
+                body{
+                background-image: url("log.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                
+                }
+                img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                }
+              
+    </style>
+    </head>
+    <body onload="alert('welcome to page!!');">
+    <form>
+        <centre>
+        <h1>Html Event Handler and DOM Manipulation </h1><br/>
+        <fieldset><legend style="font-size: 150%; color: rgb(216, 14, 132) ; font-family: Georgia, 'Times New Roman', Times, serif;">Move your mouse over the image </legend>
+        Enter your name :<input type="text" name="user" id="user" onfocus="displayDate()"/><br/><br/>
+        <input type="button" id="btn1" value="Click here" onclick="my()"/><br>
+        <p id="demo" style="color: blueviolet; font-size:large;",></p><br/>
+        <p id="demo1" style="color: rgb(231, 96, 18); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;",></p><br/>
+        <img style="display: block;" id="img1" onmouseover="happy()" onmouseout="sad()" src="sad.jpg" alt="Smiley" width="100" height="150">
+  
+    </fieldset>
+</centre>
+    </form>
+    </body>
+</html>

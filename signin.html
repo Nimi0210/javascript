@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>Login page</title>
+      <script src="signin.js">
+        
+      </script>
+      <link rel="stylesheet" type="text/css" href="signin.css">
+   </head>
+   <body>
+      <h1 id="h1"> Welcome to intimetec!! </h1>
+    <div class="signup">
+       <h1>Sign Up</h1>
+       <form role="form" onsubmit="signUp(event);" autocomplete="off">
+          <input type="text" placeholder="Name"  id="name" minlength="5" maxlength="15" required/>
+          <input type="radio" id="male" name="gender" value="Male"/>Male
+          <input type="radio" id="female" name="gender" value="Female"/>Female
+          <input type="text" placeholder="Email-id" id="email" pattern=".*.com" required/>
+          <input type="password" placeholder="Password" id="pass" minlength="6" maxlength="10" required/>
+          <input type="submit" value="Register">
+       </form>
+    </div>
+    <p class="para">Already have an account ? <a href="login.html"> Log in!</a></p>
+
+
+      
+   </body>
+</html>
